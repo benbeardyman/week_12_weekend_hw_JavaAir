@@ -7,25 +7,25 @@ import static org.junit.Assert.assertEquals;
 
 public class CabinCrewMemberTest {
 
-    CabinCrewMember cabinCrewMember;
+    CabinCrewMember flightAttendant;
 
     @Before
     public void before(){
-        cabinCrewMember = new CabinCrewMember("Elaine Dickinson", CrewRank.LEAD_ATTENDANT);
+        flightAttendant = new CabinCrewMember("Claire Miller", CrewRank.FLIGHT_ATTENDANT);
     }
 
     @Test
     public void canGetName(){
-        assertEquals("Elaine Dickinson", cabinCrewMember.getName());
+        assertEquals("Claire Miller", flightAttendant.getName());
     }
 
     @Test
     public void canGetRank(){
-        assertEquals(CrewRank.LEAD_ATTENDANT, cabinCrewMember.getRank());
+        assertEquals(CrewRank.FLIGHT_ATTENDANT, flightAttendant.getRank());
     }
 
     @Test
     public void canMakeAnnouncment(){
-        assertEquals("Enjoy your flight", cabinCrewMember.makesAnnouncement());
+        assertEquals("Enjoy your flight, hope no snakes escape...", flightAttendant.makesAnnouncement());
     }
 }

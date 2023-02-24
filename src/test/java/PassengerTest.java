@@ -10,12 +10,12 @@ public class PassengerTest {
 
     @Before
     public void before(){
-        passenger = new Passenger("Dr. Rumack", 1);
+        passenger = new Passenger("Neville Flynn", 1);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Dr. Rumack", passenger.getName());
+        assertEquals("Neville Flynn", passenger.getName());
     }
 
     @Test
