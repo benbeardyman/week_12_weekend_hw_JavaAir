@@ -80,7 +80,8 @@ public class Flight {
     }
 
     public void bookPassenger(Passenger passenger) {
-        if (checkAvailableSeats() > 0);
+        if (checkAvailableSeats() > 0){
             addPassenger(passenger);
+        }
     }
 }
